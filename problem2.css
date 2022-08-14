@@ -1,0 +1,158 @@
+body {
+  background: #FC466B;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3F5EFB, #FC466B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.grid-item {
+  background-color: goldenrod;
+  column-gap: 1 rem;
+  text-align: center;
+  padding: .5rem;
+  margin: 0.5rem;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.items2,
+.items3 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.items1 {
+  background: url(https://jolly-kalam-23776e.netlify.com/restaurantwebsite/images/taco.jpg);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 22rem;
+  display: grid;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.hero > * {
+  background: #ffc600;
+  padding: 5px;
+}
+.hero h1{
+  width: 20rem;
+}
+.hero p{
+  width: 10rem;
+}
+.cta {
+  background: #ffc600;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 10rem;
+}
+
+.cta p {
+  margin: 0;
+}
+.price {
+  font-weight: 200;
+  font-size: 50px;
+}
+.cta1 {
+  grid-area: cta1;
+}
+.cta2 {
+  grid-area: cta2;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.2);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.feature h3 {
+  font-weight: 300;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.feature p {
+  font-weight: 200;
+}
+
+.icon {
+  padding: 10px;
+  font-size: 30px;
+}
+
+.about {
+  background: rgba(255, 255, 255, 0.2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.about img {
+  padding: 20px;
+}
+
+.about__details h2 {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.about__details p {
+  font-weight: 200;
+}
+.about__details button {
+  margin-bottom: 20px;
+}
+
+.gallery h2 {
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.gallery__images {
+  display: grid;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-items: center;
+  justify-items: center;
+}
